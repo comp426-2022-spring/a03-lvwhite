@@ -36,7 +36,7 @@ app.get('/app/flip', (req, res) => {
 });
 
 app.get('/app/flips/:number', (req, res) => {
-  //res.setHeader('Content-Type', 'text/html')
+  res.setHeader('Content-Type', 'text/html')
   
   ///// from a02
   const numOfFlips = coinFlips(req.params.number);
@@ -50,7 +50,7 @@ app.get('/app/flips/:number', (req, res) => {
   res.end("{\"raw\":" + str1 + ", \"summary\":" + str + "}");
 });
 
-app.get('/app/call/heads', (req, res) => {
+app.get('/app/flip/call/heads', (req, res) => {
   res.setHeader('Content-Type', 'text/html')
 
   // a02
@@ -58,7 +58,7 @@ app.get('/app/call/heads', (req, res) => {
   res.json(STDOUT);
 });
 
-app.get('/app/call/tails', (req, res) => {
+app.get('/app/flip/call/tails', (req, res) => {
   res.setHeader('Content-Type', 'text/html')
 
   // a02
