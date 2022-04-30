@@ -43,6 +43,7 @@ app.get('/app/flips/:number', (req, res) => {
   let second = countFlips(numOfFlips);
   let str = JSON.stringify(second)
   //console.log(str1);
+  //nothing
   res.end("{\"raw\":" + str1 + ", \"summary\":" + str + "}");
 });
 
