@@ -47,7 +47,7 @@ app.get('/app/flips/:number', (req, res) => {
   let str = JSON.stringify(second)
   //console.log(str1);
   //nothing
-  res.end("{\"raw\":" + str1 + ", \"summary\":" + str + "}");
+  res.end("{\"raw\":" + str1 + ",\"summary\":" + str + "}");
 });
 
 app.get('/app/flip/call/heads', (req, res) => {
