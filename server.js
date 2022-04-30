@@ -9,8 +9,11 @@ import express from 'express';
 // Require Express.js
 const app = express()
 
+
+var argv = minimist(process.argv.slice(2));
+var port = argv['port'] || 5000;
 //args["port"]
-const port = process.env.PORT || 5000
+//const port = process.env.PORT || 5000
 // Start an app server
 const server = app.listen(port, () => {
     console.log('App listening on port %PORT%'.replace('%PORT%', port))
