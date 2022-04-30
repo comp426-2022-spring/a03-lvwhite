@@ -32,7 +32,7 @@ app.get('/app/flip', (req, res) => {
     res.setHeader('Content-Type', 'text/html')
     // Call the coinFlip function and put the return into STDOUT
     let STDOUT = coinFlip();
-    res.end(STDOUT);
+    res.end("{\"flip\":" + "\"" + STDOUT + "\"" + "}")
 });
 
 app.get('/app/flips/:number', (req, res) => {
