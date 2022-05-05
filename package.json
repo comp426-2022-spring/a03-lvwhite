@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "description": "Creating an API",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js --port=5555"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-spring/a03-lvwhite.git"
+  },
+  "author": "Luke White",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-spring/a03-lvwhite/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-spring/a03-lvwhite#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "minimist": "^1.2.6"
+  },
+  "type": "module"
+}
